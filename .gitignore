@@ -1,1 +1,13 @@
 pubspec_overrides.yaml
+
+.DS_Store
+*.iml
+*.ipr
+*.iws
+.idea/
+
+.packages
+.pub/
+build/
+packages
+pubspec.lock

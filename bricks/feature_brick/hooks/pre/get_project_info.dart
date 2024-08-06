@@ -40,8 +40,7 @@ Future<bool> _uses(String input, {required io.File file}) async {
 io.File _getPubspec(HookContext context) {
   final appName = (context.vars['appName'] as String).snakeCase;
   final platforms = context.vars['platform'] as List<dynamic>;
-  final parsedPlatforms = parsePlatforms(platforms.map((e) => e as String));
-  print('platforms : $parsedPlatforms');
+
   try {
     return io.File.fromUri(
         Uri.file('${platforms.first}/$appName/pubspec.yaml'));

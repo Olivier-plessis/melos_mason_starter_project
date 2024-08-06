@@ -1,4 +1,4 @@
-# riverpod_clean_archi
+# feature_brick
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
@@ -22,15 +22,13 @@ you can add the **riverpod_clean_archi** brick to the configuration by adding th
 
 ``` yaml
 bricks:
-  riverpod_clean_archi:
-    git:
-      url: 'https://github.com/Olivier-plessis/mason_brick_solid_principles_riverpod'
-      path: 'bricks/riverpod_clean_archi'
+  feature_brick:
+    path: 'bricks/feature_brick'
 ```
 
 ## Usage 🕹️
 
-To use the **riverpod_clean_archi** brick, and generate code. You can run the following command in your terminal:
+To use the **feature_brick** brick, and generate code. You can run the following command in your terminal:
 
 ``` sh
 mason get
@@ -39,7 +37,7 @@ mason get
 and
 
 ``` sh
-mason make riverpod_clean_archi
+mason make feature_brick
 ```
 
 ## Important Note to use it
@@ -50,24 +48,24 @@ mason make riverpod_clean_archi
 
 ``` sh
 lib/
-├── features
+├── feature
 │   ├── {{feature_name}}
 │   │   ├── data
-│   │   │   ├── sources
+│   │   │   ├── source
 │   │       │   ├── // add your own logic
-│   │   │   └── repositories
+│   │   │   └── repository
 │   │       │   ├── {{feature_name}}_repository_impl.dart
 │   │   ├── domain
-│   │   │   ├── entities
+│   │   │   ├── model
 │   │       │   ├── {{feature_name}}.dart
-│   │   │   ├── repositories
+│   │   │   ├── repository
 │   │       │   ├── {{feature_name}}_repository.dart
 │   │   └── presentation
 │   │       ├── components
 │   │       │   ├── {{feature_name}}_widget.dart
-│   │       ├── pages
+│   │       ├── page
 │   │       │   ├── {{feature_name}}_screen.dart
-│   │       ├── providers
+│   │       ├── provider
 │   │       │   ├── {{feature_name}}_provider.dart
  ```
 

@@ -1,7 +1,7 @@
 # 🏗️ Melos Mason bricks starter app
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Olivier-plessis/mason_brick_solid_principles_riverpod/master/assets/mason_full.png" height="125" alt="mason logo" />
+<img src="https://raw.githubusercontent.com/Olivier-plessis/mason_brick_solid_principles_riverpod/blob/main/.github/assets/mason_full.png" height="125" alt="mason logo" />
 </p>
 This bricks can generate feature folders and files for
 **solid principles**, **clean architecture** and **riverpod geenrator**.

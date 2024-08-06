@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/melos_mason_starter_projet.iml" filepath="$PROJECT_DIR$/.idea/melos_mason_starter_projet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_starter_app.iml" filepath="$PROJECT_DIR$/melos_starter_app.iml" />
     </modules>
   </component>
 </project>

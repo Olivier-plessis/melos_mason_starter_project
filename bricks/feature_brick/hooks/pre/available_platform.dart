@@ -3,14 +3,14 @@ Iterable<AvailablePlatform> parsePlatforms(Iterable<String> platforms) {
 }
 
 enum AvailablePlatform {
-  packages,
-  app;
+  app,
+  packages;
 
   const AvailablePlatform();
 
   factory AvailablePlatform.fromString(String os) => switch (os) {
-        'packages' => AvailablePlatform.packages,
         'app' => AvailablePlatform.app,
+        'packages' => AvailablePlatform.packages,
         _ => throw UnsupportedPlatformException(os),
       };
 

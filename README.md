@@ -5,7 +5,7 @@
 <img src="https://raw.githubusercontent.com/Olivier-plessis/melos_mason_starter_project/main/.github/assets/mason_full.png" height="125" alt="mason logo" />
 </p>
 This bricks can generate feature folders and files for
-**solid principles**, **clean architecture** and **riverpod generator**.
+**solid principles**, **clean architecture**  **riverpod generator**  **hooks** and **dartz**.
 
 ## Getting Started 🚀
 
@@ -29,7 +29,7 @@ this repo currently contains two bricks that I'm going to develop according to m
 
 To use the **clean_architecture_feature_riverpod** brick, and generate code. You can run the following command in your terminal:
 procede to intialize the melos project
- - insidide the melos.yaml file, change the name of the project
+ - in the melos.yaml file, change the name of the project
 ``` sh
 name: starter_app
 ```
@@ -43,8 +43,15 @@ melos bs
 
 
 **app configuration 📦**
+install mason cli
+``` sh
+    dart pub global activate mason_cli
+ ```
+
+load mason bricks
 
 ``` sh
+    mason get 
     cd app && mason make scaffold_riverpod_app
  ```
 
@@ -70,3 +77,5 @@ in the analysis_options.yaml file add the following line:
  ```
 
 Follow the instructions in the prompt and **VOILA**.
+
+if the new feature contains a page, it is automatically added to the router.

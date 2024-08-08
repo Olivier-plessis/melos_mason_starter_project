@@ -30,11 +30,10 @@ vars:
     type: array
     prompt: What platform do you want to build for?
     default:
-      - packages
       - app
     values:
-      - packages
       - app
+      - packages
   appName:
     type: string
     description: Your platform name
@@ -43,7 +42,7 @@ vars:
   feature_name:
     type: string
     description: Name of the folder, files.
-    default: feature
+    default: feature_name
     prompt: What is the name of feature?
   page:
     type: boolean

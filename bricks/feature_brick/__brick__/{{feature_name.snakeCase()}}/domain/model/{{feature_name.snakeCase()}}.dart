@@ -1,7 +1,7 @@
 {{#freezed}}
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '.{{feature_name.snakeCase()}}.freezed.dart';
+part '{{feature_name.snakeCase()}}.freezed.dart';
 part '{{feature_name.snakeCase()}}.g.dart';
 
 @freezed

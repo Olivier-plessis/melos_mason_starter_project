@@ -34,7 +34,7 @@ Future<void> runGeneratedRoute(HookContext context) async {
    GoRoute(
      path: '/$featureName',
      name: AppPage.$featureName.name,
-     builder: (context, state) => ${feature}Screen(),
+     builder: (context, state) => const ${feature}Screen(),
    ),''';
 
 // Add import line

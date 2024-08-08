@@ -16,7 +16,7 @@ class {{feature_name.pascalCase()}}Screen extends StatefulHookConsumerWidget {
 class _{{feature_name.pascalCase()}}ScreenState extends ConsumerState<{{feature_name.pascalCase()}}Screen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Center(child: Text('Hello {{feature_name.pascalCase()}}!'));
   }
 }
 {{/isStFullHook}}
@@ -25,7 +25,7 @@ class {{feature_name.pascalCase()}}Screen extends HookConsumerWidget {
   const {{feature_name.pascalCase()}}Screen({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Placeholder();
+   return const Center(child: Text('Hello {{feature_name.pascalCase()}}!'));
   }
 }
 {{/isStFullHook}}
@@ -41,7 +41,7 @@ class {{feature_name.pascalCase()}}Screen extends ConsumerStatefulWidget {
 class _{{feature_name.pascalCase()}}ScreenState extends ConsumerState<{{feature_name.pascalCase()}}Screen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Center(child: Text('Hello {{feature_name.pascalCase()}}!'));
   }
 }
 
@@ -52,7 +52,7 @@ class {{feature_name.pascalCase()}}Screen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Placeholder();
+   return const Center(child: Text('Hello {{feature_name.pascalCase()}}!'));
   }
 }
 {{/isStFullWithoutHook}}

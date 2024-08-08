@@ -2,7 +2,6 @@ import 'dart:io' as io;
 
 import 'package:mason/mason.dart';
 
-
 Future<void> getProjectInfo(HookContext context) async {
   final pubspec = _getPubspec(context);
 

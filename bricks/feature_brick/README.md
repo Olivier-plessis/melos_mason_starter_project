@@ -6,7 +6,7 @@ A new brick created with the Mason CLI.
 
 ## Important Note
 
-This brick works best with [this other brick](https://github.com/Olivier-plessis/mason_brick_solid_principles_riverpod/blob/main/bricks/riverpod_solid_principles_brick/README.md), that sets up the architecture mentioned above. It also prepares the ground for you to set up code generation, layering, etc.
+This brick works best with [this other brick](https://github.com/Olivier-plessis/mason_brick_solid_principles_riverpod/blob/main/bricks/scaffold_riverpod_app/README.md), that sets up the architecture mentioned above. It also prepares the ground for you to set up code generation, layering, etc.
 
 ### Folder architecture is based on solid principles
 

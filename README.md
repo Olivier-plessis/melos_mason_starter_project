@@ -27,7 +27,7 @@ this repo currently contains two bricks that I'm going to develop according to m
 
 ## Usage 🕹️
 
-To use the **clean_architecture_feature_riverpod** brick, and generate code. You can run the following command in your terminal:
+To use the **scaffold_riverpod_app** brick, and generate code. You can run the following command in your terminal:
 procede to intialize the melos project
  - in the melos.yaml file, change the name of the project
 ``` sh

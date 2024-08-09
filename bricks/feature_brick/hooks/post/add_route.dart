@@ -27,7 +27,7 @@ Future<void> runGeneratedRoute(HookContext context) async {
   final feature = featureName.pascalCase;
 
   final importLine =
-      "import 'package:$appName/src/feature/$featureName/presentation/pages/${featureName}_screen.dart';";
+      "import 'package:$appName/src/feature/${featureName.snakeCase}/presentation/pages/${featureName.snakeCase}_screen.dart';";
 
   final content = file.readAsStringSync();
   final routeLine = '''

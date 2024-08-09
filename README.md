@@ -52,7 +52,7 @@ load mason bricks
 
 ``` sh
     mason get 
-    cd app && mason make scaffold_riverpod_app
+    mason make scaffold_riverpod_app
  ```
 
 Follow the instructions in the prompt and **VOILA**.

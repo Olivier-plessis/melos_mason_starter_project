@@ -6,12 +6,24 @@ import 'post/add_route.dart';
 import 'post/app_build_runner.dart';
 import 'post/dart_formater.dart';
 import 'post/move_file.dart';
+import 'post/remove_folder.dart';
 
 Future<void> run(HookContext context) async {
   await executeAndLog(
     context: context,
     cb: runMoveFileGenerated,
     message: 'Moving generated files in progress ..',
+  );
+  await Future<void>.delayed(_duration);
+
+  await executeAndLog(
+    context: context,
+    cb: (context) async {
+      if (!(context.vars['page'] as bool)) {
+        await runRemoveFolderGenerated(context, 'presentation');
+      }
+    },
+    message: 'Remove folder in progress ..',
   );
   await Future<void>.delayed(_duration);
 

@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
-import 'package:mason/mason.dart';
 
+import 'package:mason/mason.dart';
 import 'package:path/path.dart' as p;
 
 extension StringCasingExtension on String {
@@ -11,7 +11,7 @@ extension StringCasingExtension on String {
 
 Future<void> runGeneratedRoute(HookContext context) async {
   final appName = (context.vars['appName'] as String).snakeCase;
-  final featureName = (context.vars['feature_name'] as String).snakeCase;
+  final featureName = (context.vars['feature_name'] as String);
   // Dynamically construct the file path
   final currentDir = Directory.current.path;
   final filePath =
@@ -24,7 +24,7 @@ Future<void> runGeneratedRoute(HookContext context) async {
     exit(1);
   }
 
-  final feature = featureName.toCapitalized();
+  final feature = featureName.pascalCase;
 
   final importLine =
       "import 'package:$appName/src/feature/$featureName/presentation/pages/${featureName}_screen.dart';";
@@ -32,8 +32,8 @@ Future<void> runGeneratedRoute(HookContext context) async {
   final content = file.readAsStringSync();
   final routeLine = '''
    GoRoute(
-     path: '/$featureName',
-     name: AppPage.$featureName.name,
+     path: AppPage.${featureName.camelCase}.routePath,
+     name: AppPage.${featureName.camelCase}.routeName,
      builder: (context, state) => const ${feature}Screen(),
    ),''';
 

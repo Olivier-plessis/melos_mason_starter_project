@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
-import 'package:mason/mason.dart';
 
+import 'package:mason/mason.dart';
 import 'package:path/path.dart' as p;
 
 import '../pre/available_platform.dart';
@@ -33,7 +33,7 @@ Future<void> runGeneratedRouteConstant(HookContext context) async {
 
   // Add route entry
   if (newContent.contains('enum AppPage')) {
-    newContent = newContent.replaceFirst('}', '  $featureName,\n}');
+    newContent = newContent.replaceFirst('}', '  ${featureName.camelCase},\n}');
   }
 
   // Add routePath entry in AppPageExtension
@@ -44,7 +44,7 @@ Future<void> runGeneratedRouteConstant(HookContext context) async {
       if (match != null) {
         final cases = match.group(2);
         final updatedCases =
-            "$cases\n      AppPage.$featureName => '/${featureName.snakeCase}',";
+            "$cases\n      AppPage.${featureName.camelCase} => '/${featureName.paramCase}',";
         newContent = newContent.replaceRange(
           match.start,
           match.end,
@@ -60,7 +60,7 @@ Future<void> runGeneratedRouteConstant(HookContext context) async {
       final match = patternRouteName.allMatches(newContent).last;
       final cases = match.group(2);
       final updatedRouteCases =
-          "$cases\n      AppPage.$featureName => '${featureName.toUpperCase()}',";
+          "$cases\n      AppPage.${featureName.camelCase} => '${featureName.toUpperCase()}',";
       newContent = newContent.replaceRange(
         match.start,
         match.end,

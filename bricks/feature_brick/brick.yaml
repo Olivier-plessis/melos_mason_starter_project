@@ -52,4 +52,4 @@ vars:
     type: boolean
     description: Make a isStateFull widget
     default: true
-    prompt: is isStateFull?
+    prompt: is isStateFull or if you don't need a new page just press enter?
